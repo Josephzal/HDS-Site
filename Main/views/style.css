@@ -1,0 +1,84 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#indexHero {
+    position: relative;
+    text-align: center;
+}
+
+.top-left {
+    position: absolute;
+    top: 6rem;
+    color: black;
+}
+
+.bottom-center {
+
+    text-align: center;
+    color: black;
+    font-size: x-large;
+}
+
+#logo {
+    width: 60px;
+    height: 40px;
+    margin-left: 2.5rem;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.topBar {
+    background-color: orange;
+    text-align: center;
+
+}
+
+.topBar a {
+    color: white;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(1, 75, 136);
+}
+
+h2 {
+    color: rgb(165, 108, 42);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
+}
+
+.locationImgs {
+    height: 80%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactHeaders {
+    margin-bottom: 5rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
