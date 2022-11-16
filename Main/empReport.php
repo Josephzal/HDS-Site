@@ -7,6 +7,7 @@
                 <th>Last Name</th>
             </tr>
             <?php
+//             Generate employee report if employee exists
             $conn = mysqli_connect("localhost", "admin", "admin", "capstonetest");
             $sql = "SELECT * FROM customer";
             $result = $conn->query($sql);
