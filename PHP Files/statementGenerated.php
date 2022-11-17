@@ -14,6 +14,7 @@
     ?>
 </header>
 
+<!-- Attempt to generate statement by customer id -->
 <?php
 
     $crud = new crud();
