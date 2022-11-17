@@ -17,7 +17,7 @@
 <?php
 
     $crud = new crud();
-
+// Attempt to order to generate receipt
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
         $result = $crud->getOrder($id);
