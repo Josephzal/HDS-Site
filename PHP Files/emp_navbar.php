@@ -26,6 +26,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="customerReport.php">Customer</a></li>
 
+            <!--       Order of least privilege for employee reports      -->
             <?php if($_SESSION['job'] == 'President and CEO' ||
                       $_SESSION['job'] == 'Vice President and CFO' ||
                       $_SESSION['job'] == 'Store Manager' ||
