@@ -7,6 +7,7 @@
 ?>
 <title>Customer Report</title>
 
+<!-- Display all customers in database -->
 <?php
 
     $sql = "SELECT * FROM customers;";
@@ -46,6 +47,7 @@
                     
                     <?php if ($result->num_rows > 0): ?>
                     
+                    <!--        Display all generated customers              -->
                     <?php while($row = $results->fetch_assoc()): ?>
                         <tr>
                         <td><?php echo $row['customer_id'] ?></td>
