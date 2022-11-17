@@ -14,6 +14,7 @@
     ?>
 </header>
 
+<!--   Attempt to generate reports by customer id   -->
 <?php
 
     $crud = new crud();
@@ -87,7 +88,8 @@
                     </tr>
                 </thead>
                 <tbody> 
-          
+                    
+<!--        Display generated results           -->
                  <?php if ($prodResult->num_rows > 0): ?>
                     
                     <?php while($row = $prodResult->fetch_assoc()): ?>
