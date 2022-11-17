@@ -8,6 +8,7 @@
     $prodRes = $result->fetch_assoc();
     $res = $_GET['id'];
 
+// Update product according to user input on form
     if(isset($_POST['edit']))
     {    
         $categoryID = $_POST['categoryID'];
