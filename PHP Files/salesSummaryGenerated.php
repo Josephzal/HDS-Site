@@ -14,6 +14,7 @@
     ?>
 </header>
 
+<!--   Generate sales summary with given date range   -->
 <?php
 
     $crud = new crud();
