@@ -7,6 +7,7 @@
 ?>
 <title>Employee Report</title>
 
+<!-- Retrieve all employees -->
 <?php
 
     $crud = new crud();
@@ -47,6 +48,7 @@
                     
                     <?php if ($results->num_rows > 0): ?>
                     
+                    <!--           Display employee information retrieved from database           -->
                     <?php while($row = $results->fetch_assoc()): ?>
                         <tr>
                         <td><?php echo $row['employee_id'] ?></td>
