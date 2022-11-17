@@ -1,3 +1,4 @@
+<!-- Attempt to log employee in to access employee sensitive information -->
 <?php
     session_start();
     include_once 'dbh.inc.php';
@@ -48,6 +49,7 @@
     </div>
 </div>
 
+<!--   Attempt to set employee login with job title to ensure order of least privilege   -->
 <?php
     if($count == "0") {
         echo '<h5 class="loginError" >Incorrect Login</h5>';
