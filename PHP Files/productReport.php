@@ -4,6 +4,7 @@
     include_once 'crud.php';
     include_once 'head.php';
 
+// Attempt to delete product by id
     if(isset($_GET['id']))
     {    
          $id = $_GET['id'];
