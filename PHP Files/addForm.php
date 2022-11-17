@@ -3,6 +3,7 @@
     include_once 'dbh.inc.php';
     include_once 'head.php';
 
+// Attempt to add product to database
     if(isset($_POST['add']))
 {    
      $categoryID = $_POST['categoryID'];
