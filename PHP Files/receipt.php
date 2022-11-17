@@ -47,6 +47,7 @@
                     
                     <?php if ($result->num_rows > 0): ?>
                     
+                    <!--          Retrieve and display receipt data         -->
                     <?php while($row = $result->fetch_assoc()): ?>
                         <tr>
                         <td><?php echo $row['order_id'] ?></td>
