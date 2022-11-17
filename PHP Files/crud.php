@@ -11,7 +11,8 @@ class crud {
     function _construct($conn) {
         $this->db = $conn;
     }
-
+    
+// Retrieve and display inventory from database
     public function getInventory() {
         require 'dbh.inc.php';
         try{
@@ -37,6 +38,7 @@ class crud {
         }
     }
 
+//     Retrieve product from database
     public function getProduct($id) {
         require 'dbh.inc.php';
         try {
@@ -49,6 +51,7 @@ class crud {
         }
     }
 
+//     Retrieve all customer orders
     public function getOrders() {
         require 'dbh.inc.php';
         try {          
@@ -66,6 +69,7 @@ class crud {
             
     }
 
+//     Retrieve customer orders by id
     public function getOrder($id) {
         require 'dbh.inc.php';
         try {             
@@ -85,6 +89,7 @@ class crud {
             
     }
 
+//     Retrieve all employees
     public function getEmployees() {
         require 'dbh.inc.php';
         try{
@@ -97,6 +102,7 @@ class crud {
         }
     }
 
+//     Retrieve employee by id
     public function getEmployee($id) {
         require 'dbh.inc.php';
         try{
@@ -109,6 +115,7 @@ class crud {
         }
     }
 
+//     Retrieve all customers
     public function getCustomers() {
         require 'dbh.inc.php';
         try{
@@ -122,6 +129,7 @@ class crud {
     }
 
    
+//     Retrieve all customers with a current balance greater than 0
     public function getCustomersNonZero() {
         require 'dbh.inc.php';
         try{
@@ -158,6 +166,7 @@ class crud {
         }
     }
 
+//     Retrieve customer with a current balance greater than 0 by id
     public function getCustNonZeroStatement($id) {
         require 'dbh.inc.php';
         try{
@@ -195,6 +204,7 @@ class crud {
     }
 
 
+//     Generate customer report by id
     public function getCustReport($id) {
         $mysqli = new mysqli("localhost", "root", "Sqlpassword", "hdsdb");
      
@@ -205,6 +215,7 @@ class crud {
         return $result;
     }
 
+//     Generate customer product report by id
     public function getCustProdReport($id) {
         require 'dbh.inc.php';
         $sql = "SELECT c.customer_id, ol.product_id, quantity, ol.order_id, prod_desc
@@ -225,6 +236,7 @@ class crud {
 
     }
 
+//     Delete product form database by id
     public function deleteProduct($id) {
         require 'dbh.inc.php';
         $sql = "DELETE FROM customer WHERE CustomerID = $id";
