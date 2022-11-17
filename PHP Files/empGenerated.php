@@ -14,6 +14,7 @@
     ?>
 </header>
 
+<!--   Attempt to generate employee report by id   -->
 <?php
 
     $crud = new crud();
